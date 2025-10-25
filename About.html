@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suscom Infrastructure</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Navbar -->
+  <nav class="bg-blue-300 fixed w-full top-0 z-50 flex justify-between items-center p-3 px-6 md:px-12 shadow-lg">
+    <div class="flex items-center gap-3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0hNBlDtXCQ5_dSbckjh9nFbhmhIo6FkMWpg&s" 
+           alt="Suscom Logo" 
+           class="h-12 w-12 rounded-full border-2 border-white shadow-md">
+      <p class="text-white font-semibold text-xl">Suscom Infrastructure</p>
+    </div>
+
+    <!-- Desktop Menu -->
+  <ul class="hidden md:flex space-x-8 text-white font-bold text-2xl p-4 ">
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Header.html">Home</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="About.html">About Us</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Services.html">Projects</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Contact.html">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-gray-500 text-white px-6 py-10 pb-4 mt-16 shadow-md">
+    <ul class="flex flex-col space-y-3 text-center">
+      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="#about" class="hover:text-yellow-300">About Us</a></li>
+      <li><a href="#projects" class="hover:text-yellow-300">Projects</a></li>
+      <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
+      <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="pt-32 pb-20 bg-gradient-to-b from-white to-blue-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 relative inline-block">
+        About <span class="text-blue-600">Us</span>
+        <span class="absolute left-0 bottom-0 w-full h-1 bg-blue-500 rounded"></span>
+      </h2>
+      <p class="text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed">
+        <strong>Suscom Infrastructure</strong> is a trusted name in India’s construction and infrastructure sector. 
+        We specialize in creating sustainable, innovative, and high-quality infrastructure that drives growth and enhances communities.
+      </p>
+    </div>
+
+    <!-- About Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 max-w-6xl mx-auto px-6">
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-blue-500 border-b-4 border-blue-500">
+        <div class="text-blue-600 text-4xl mb-3">🏗️</div>
+        <h3 class="text-xl font-bold mb-2">Quality Construction</h3>
+        <p class="text-gray-600">We ensure top-notch standards using the best materials and modern techniques for every project.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-green-500 border-b-4">
+        <div class="text-green-600 text-4xl mb-3">💡</div>
+        <h3 class="text-xl font-bold mb-2">Innovation & Design</h3>
+        <p class="text-gray-600">We embrace modern technology and innovation to deliver future-ready infrastructure.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-yellow-500 border-b-4">
+        <div class="text-yellow-600 text-4xl mb-3">🌍</div>
+        <h3 class="text-xl font-bold mb-2">Sustainability</h3>
+        <p class="text-gray-600">We focus on eco-friendly projects that balance progress and environmental responsibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MISSION SECTION -->
+  <section id="mission" class="py-20 bg-gray-100">
+    <div class="text-center mb-14 font-bold text-lg">
+       <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 relative inline-block">
+      Our<span class="text-blue-600"> Mission</span>
+        <span class="absolute left-0 bottom-0 w-full h-1 bg-blue-500 rounded"></span>
+      </h2>
+      <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+       At Suscom Infrastructure, our mission is to deliver reliable, sustainable, and innovative infrastructure solutions that contribute to the growth and development of society. We are dedicated to achieving excellence through quality workmanship, advanced technology, and a commitment to safety and environmental responsibility.
+      </p>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6">
+      <!-- Each mission point -->
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:drop-shadow-m transition border-t-4 border-green-500 hover:scale-105">
+        <div class="text-green-600 text-3xl mb-3">🌱</div>
+        <h4 class="font-semibold text-gray-800">Sustainable Solutions</h4>
+        <p class="text-gray-600 text-sm mt-2">We build eco-friendly, long-lasting infrastructure that benefits communities.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-blue-500 hover:scale-105">
+        <div class="text-blue-500 text-3xl mb-3">💡</div>
+        <h4 class="font-semibold text-gray-800">Innovation</h4>
+        <p class="text-gray-600 text-sm mt-2">We use advanced technology to ensure efficiency and quality in all projects.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-yellow-500 hover:scale-105">
+        <div class="text-yellow-500 text-3xl mb-3">🏗️</div>
+        <h4 class="font-semibold text-gray-800">Quality</h4>
+        <p class="text-gray-600 text-sm mt-2">Committed to delivering the highest standards of construction and design.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-purple-500 hover:scale-105">
+        <div class="text-purple-500 text-3xl mb-3">👷‍♂️</div>
+        <h4 class="font-semibold text-gray-800">Community Focus</h4>
+        <p class="text-gray-600 text-sm mt-2">Improving lives with better roads, housing, and infrastructure.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-red-500 hover:scale-105">
+        <div class="text-red-500 text-3xl mb-3">🌐</div>
+        <h4 class="font-semibold text-gray-800">Nationwide Impact</h4>
+        <p class="text-gray-600 text-sm mt-2">Delivering infrastructure that connects and strengthens India.</p>
+      </div>
+
+      <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-indigo-500 hover:scale-105">
+        <div class="text-indigo-500 text-3xl mb-3">⚡</div>
+        <h4 class="font-semibold text-gray-800">Future Ready</h4>
+        <p class="text-gray-600 text-sm mt-2">Building smart, adaptive infrastructure for future generations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISION SECTION -->
+  <section id="vision" class="py-20 bg-white">
+    <div class="text-center mb-14 font-bold text-lg">
+       <h2 class="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 relative inline-block">
+        Our <span class="text-blue-600">VISION</span>
+        <span class="absolute left-0 bottom-0 w-full h-1 bg-blue-500 rounded"></span>
+      </h2>
+      <p class="text-gray-600 mt-4 max-w-3xl mx-auto">At Suscom Infrastructure, our vision is to shape a sustainable and progressive future through innovation, integrity, and excellence in every project we undertake. We aspire to be recognized as a global leader in infrastructure development, delivering world-class solutions that strengthen communities and empower growth</p>
+      <p class="text-gray-600 mt-4 max-w-3xl mx-auto">
+        To build tomorrow’s infrastructure today, focusing on innovation, sustainability, and lasting community value.
+      </p>
+
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6">
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl hover:scale-105 transition border-l-4 border-green-500 border-r-4 ">
+        <div class="text-green-600 text-3xl mb-3">🌱</div>
+        <h4 class="font-semibold text-gray-800">Sustainable Growth</h4>
+        <p class="text-gray-600 text-sm mt-2">Eco-friendly, future-oriented development for generations to come.</p>
+      </div>
+
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition border-l-4 border-blue-500 hover:scale-105 border-r-4">
+        <div class="text-blue-500 text-3xl mb-3">💡</div>
+        <h4 class="font-semibold text-gray-800">Innovation</h4>
+        <p class="text-gray-600 text-sm mt-2">Integrate cutting-edge designs and technologies into every project.</p>
+      </div>
+
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition border-l-4 border-yellow-500 hover:scale-105 border-r-4">
+        <div class="text-yellow-500 text-3xl mb-3">🏗️</div>
+        <h4 class="font-semibold text-gray-800">Quality Excellence</h4>
+        <p class="text-gray-600 text-sm mt-2">Uncompromising focus on engineering and construction quality.</p>
+      </div>
+
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition border-l-4 border-purple-500 hover:scale-105 border-r-4">
+        <div class="text-purple-500 text-3xl mb-3">⚡</div>
+        <h4 class="font-semibold text-gray-800">Future Readiness</h4>
+        <p class="text-gray-600 text-sm mt-2">Designing infrastructure that adapts to tomorrow’s challenges.</p>
+      </div>
+
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition border-l-4 border-red-500 hover:scale-105 border-r-4">
+        <div class="text-red-500 text-3xl mb-3">🌐</div>
+        <h4 class="font-semibold text-gray-800">Nationwide Reach</h4>
+        <p class="text-gray-600 text-sm mt-2">Developing projects that transform cities and connect communities.</p>
+      </div>
+
+      <div class="p-8 bg-gray-50 rounded-2xl shadow hover:shadow-xl transition border-l-4 border-indigo-500 hover:scale-105 border-r-4">
+        <div class="text-indigo-500 text-3xl mb-3">🚀</div>
+        <h4 class="font-semibold text-gray-800">Global Standards</h4>
+        <p class="text-gray-600 text-sm mt-2">Delivering infrastructure that meets international benchmarks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+
+      <!-- About Us -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-cyan-400">About Us</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          We provide innovative infrastructure solutions across the country.
+          Our team is dedicated to quality, sustainability, and excellence in every project.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-cyan-400">Services</h2>
+        <ul class="space-y-2 text-gray-400">
+          <li class="hover:text-white transition"><i class="fas fa-road text-cyan-400 mr-2"></i>Road Construction</li>
+          <li class="hover:text-white transition"><i class="fas fa-bridge text-cyan-400 mr-2"></i>Bridge Building</li>
+          <li class="hover:text-white transition"><i class="fas fa-school text-cyan-400 mr-2"></i>School Management</li>
+          <li class="hover:text-white transition"><i class="fas fa-city text-cyan-400 mr-2"></i>Smart City Projects</li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-cyan-400">Quick Links</h2>
+        <ul class="space-y-2 text-gray-400">
+          <li><a href="#home" class="hover:text-white transition"><i class="fas fa-home text-cyan-400 mr-2"></i>Home</a></li>
+          <li><a href="#about" class="hover:text-white transition"><i class="fas fa-info-circle text-cyan-400 mr-2"></i>About</a></li>
+          <li><a href="#projects" class="hover:text-white transition"><i class="fas fa-tasks text-cyan-400 mr-2"></i>Projects</a></li>
+          <li><a href="#services" class="hover:text-white transition"><i class="fas fa-cogs text-cyan-400 mr-2"></i>Our Services</a></li>
+          <li><a href="#contact" class="hover:text-white transition"><i class="fas fa-envelope text-cyan-400 mr-2"></i>Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h2 class="text-2xl font-semibold mb-4 text-cyan-400">Contact Info</h2>
+        <ul class="space-y-3 text-gray-400 text-sm">
+          <li class="flex items-start gap-3">
+            <i class="fas fa-map-marker-alt text-cyan-400 mt-1"></i>
+            <p>
+              123 Suscom Street,<br>Bhopal, Madhya Pradesh
+            </p>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone-alt text-cyan-400"></i>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-envelope text-cyan-400"></i>
+            <span>info@suscom.com</span>
+          </li>
+          <li class="flex items-start gap-3">
+            <i class="fas fa-map text-cyan-400 mt-1"></i>
+            <a 
+              href="https://www.google.com/maps/place/Sagar+High+St,+K-Sector,+Ayodhya+Nagar,+Bhopal,+Madhya+Pradesh+462041/"
+              target="_blank"
+              class="hover:text-white transition"
+            >
+              Bhopal Sagar Height Street,<br>Ayodhya Bypass Road, Bhopal (M.P)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 mt-10 pt-4 text-center text-gray-500 text-sm px-4">
+      © 2025 <span class="text-cyan-400 font-medium">Suscom Infrastructure</span>. All rights reserved.
+    </div>
+  </footer>
+  </footer>
+
+  <!-- JS: Mobile Menu -->
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
