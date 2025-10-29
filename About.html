@@ -23,7 +23,7 @@
 
     <!-- Desktop Menu -->
   <ul class="hidden md:flex space-x-8 text-white font-bold text-2xl p-4 ">
-      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Index.html">Home</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="index.html">Home</a></li>
       <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="About.html">About Us</a></li>
       <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Services.html">Services</a></li>
       <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Contact.html">Contact</a></li>
@@ -43,10 +43,10 @@
   <!-- Mobile Menu -->
   <div id="mobile-menu" class="hidden md:hidden bg-gray-500 text-white px-6 py-10 pb-4 mt-16 shadow-md">
     <ul class="flex flex-col space-y-3 text-center">
-      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-      <li><a href="#about" class="hover:text-yellow-300">About Us</a></li>
-      <li><a href="#services" class="hover:text-yellow-300">Services</a></li>
-      <li><a href="#contact" class="hover:text-yellow-300">Contact</a></li>
+      <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+      <li><a href="About.html" class="hover:text-yellow-300">About Us</a></li>
+      <li><a href="Services.html" class="hover:text-yellow-300">Services</a></li>
+      <li><a href="Contact.html" class="hover:text-yellow-300">Contact</a></li>
     </ul>
   </div>
 
@@ -66,23 +66,24 @@
 
     <!-- About Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 max-w-6xl mx-auto px-6">
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-blue-500 border-b-4 border-blue-500">
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-blue-500 border-b-4 hover:-translate-y-2 ">
         <div class="text-blue-600 text-4xl mb-3">🏗️</div>
         <h3 class="text-xl font-bold mb-2">Quality Construction</h3>
         <p class="text-gray-600">We ensure top-notch standards using the best materials and modern techniques for every project.</p>
       </div>
 
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-green-500 border-b-4">
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-green-500 border-b-4 hover:-translate-y-2 ">
         <div class="text-green-600 text-4xl mb-3">💡</div>
         <h3 class="text-xl font-bold mb-2">Innovation & Design</h3>
         <p class="text-gray-600">We embrace modern technology and innovation to deliver future-ready infrastructure.</p>
       </div>
 
-      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-yellow-500 border-b-4">
+      <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-t-4 border-yellow-500 border-b-4 hover:-translate-y-2 ">
         <div class="text-yellow-600 text-4xl mb-3">🌍</div>
-        <h3 class="text-xl font-bold mb-2">Sustainability</h3>
-        <p class="text-gray-600">We focus on eco-friendly projects that balance progress and environmental responsibility.</p>
+        <h3 class="text-xl font-bold mb-2 text-gray-800 hover:text-yellow-600 transition-colors duration-300">Sustainability</h3>
+        <p class="text-gray-600 hover:text-gray-800 transition-colors duration-300"> We lead with innovation and responsibility, driving eco-friendly growth for a sustainable future. </p>
       </div>
+
     </div>
   </section>
 
@@ -100,11 +101,16 @@
 
     <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto px-6">
       <!-- Each mission point -->
-      <div class="p-8 bg-white rounded-2xl shadow-md hover:drop-shadow-m transition border-t-4 border-blue-500 hover:scale-105">
-        <div class="text-green-600 text-3xl mb-3">🌱</div>
-        <h4 class="font-semibold text-gray-800">Sustainable Solutions</h4>
-        <p class="text-gray-600 text-sm mt-2">We build eco-friendly, long-lasting infrastructure that benefits communities.</p>
-      </div>
+      <div class="p-8 bg-white rounded-2xl shadow-md border-t-4 border-blue-500 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-xl">
+  <div class="overflow-hidden">
+    <div class="text-green-600 text-3xl mb-3 transform transition-transform duration-500 ease-in-out hover:scale-110">🌱</div>
+  </div>
+  <h4 class="font-semibold text-gray-800 text-lg md:text-xl">Sustainable Solutions</h4>
+    <p class="text-gray-600 text-sm md:text-base mt-2">
+    We build eco-friendly, long-lasting infrastructure that benefits communities.
+    </p>
+  </div>
+
 
       <div class="p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition border-t-4 border-blue-500 hover:scale-105">
         <div class="text-blue-500 text-3xl mb-3">💡</div>
