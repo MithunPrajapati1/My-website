@@ -35,47 +35,47 @@
       border-radius: 9999px;
     }
     </style>
-</head>
-<body class="bg-gray-300 font-family:Poppins ,sans-serif">
-  <body class="bg-gray-300 font-[Poppins]">
+</head> 
+<body class="bg-gray-300 text-gray-80 lg:w-full sm:[640px] lg:[1024px] sd:[756px] ">
 
-  <!-- Navbar -->
-  <nav class="bg-blue-300 fixed w-full top-0 z-50 flex justify-between items-center p-3 px-6 md:px-12">
+  <!-- Navbar --> 
+  <nav class="bg-blue-300 fixed w-full top-0 z-50 flex justify-between items-center p-3 px-4 md:px-12 shadow-lg">
     <div class="flex items-center gap-3">
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0hNBlDtXCQ5_dSbckjh9nFbhmhIo6FkMWpg&s"
-        alt="suscom group"
-        class="h-12 w-12 rounded-full"
-      />
-      <p class="text-white font-semibold text-lg">Suscom Infrastructure</p>
-    </div>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0hNBlDtXCQ5_dSbckjh9nFbhmhIo6FkMWpg&s" 
+           alt="Suscom Logo" 
+           class="h-12 w-12 rounded-full border-2 border-white shadow-md">
+      <p class="text-white font-semibold text-xl">Suscom Infrastructure</p>
+    </div> 
 
     <!-- Desktop Menu -->
-    <ul class="hidden md:flex space-x-8 text-white font-semibold text-lg">
-      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
-      <li><a href="About.html" class="hover:text-yellow-300">About Us</a></li>
-      <li><a href="Services.html" class="hover:text-yellow-300">Services</a></li>
-      <li><a href="Contact.html" class="border-2 border-red-600 bg-red-500 px-3 py-2 rounded-lg hover:text-yellow-300"> Contact</a></li>
+  <ul class="hidden md:flex  space-x-6 text-white font-bold text-2xl p-3 ">
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="index.html">Home</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="About.html">About Us</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl"><a href="Services.html">Services</a></li>
+      <li class="hover:text-yellow-300 transition  font-bold text-lgl border-2 border-red-600 bg-red-500 rounded-lg px-3"><a href="Contact.html">Contact</a></li>
     </ul>
+
     <!-- Mobile Menu Button -->
-    <button id="menu-btn" class="md:hidden text-white focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
-        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round"
-          d="M4 6h16M4 12h16m-7 6h7" />
-      </svg>
-    </button>
+    <div class="md:hidden">
+      <button id="menu-btn" class="focus:outline-none text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
   </nav>
 
   <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden md:hidden bg-gray-600 px-6 pb-4 mt-16 pt-2 text-center font-bold">
-    <ul class="flex flex-col space-y-3 text-white text-2xl">
-      <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+  <div id="mobile-menu" class="hidden fixed top-[64px] left-0 w-full bg-gray-800 text-white px-6 py-6 space-y-4 text-center shadow-md md:hidden transition-all duration-300 z-40">
+    <ul class="flex flex-col space-y-3 text-center">
+      <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
       <li><a href="About.html" class="hover:text-yellow-300">About Us</a></li>
       <li><a href="Services.html" class="hover:text-yellow-300">Services</a></li>
       <li><a href="Contact.html" class="hover:text-yellow-300 border-2 border-red-600 bg-red-500 px-3">Contact</a></li>
     </ul>
   </div>
+
 
   <!-- Hero Section -->
   <section id="home"class="relative min-h-screen w-full bg-cover bg-center flex items-center space-y-5"
@@ -85,8 +85,8 @@
   <div class="absolute inset-0 bg-black bg-opacity-70"></div>
 
   <!-- Content -->
-  <div class="relative z-10 flex flex-col justify-center w-full px-6 sm:px-10 md:px-16 lg:px-20 space-y-8 sm:space-y-2 sm:mt-32 md:mt-0">
-    <p class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-blue-400 drop-shadow-md">
+  <div class="relative z-10 flex flex-col justify-center w-full px-6 sm:px-10 md:px-16 lg:px-20 lg:space-y-2 sm:space-y-2 sm:mt-32 md:mt-0">
+    <p class="text-3xl sm:text-3xl md:text-4xl font-extrabold text-blue-400 drop-shadow-md">
       Infrastructure by Suscom Group
     </p>
 
@@ -101,15 +101,14 @@
     </div>
 
     <div class="flex flex-wrap gap-4 mt-2 font-bold">
-      <button class="hero-btn space-y-5 px-4 py-2 rounded-full bg-blue-500 text-white">Explore Services</button>
-      <button class="hero-btn space-y-5 px-4 py-2 rounded-full bg-blue-500 text-white">Get a Quote</button>
+     <a href="Services.html"><button class="hero-btn space-y-5 px-4 py-2 rounded-full bg-blue-500 text-white">Explore Services</button></a>
+     <a href="Contact.html"><button class="hero-btn space-y-5 px-4 py-2 rounded-full bg-blue-500 text-white">Get a Quote</button></a>
     </div>
   </div>
 </section>
 
  
      <!--About us section-->
-                                                                      
       <section id="about" class=" py-20 px-8 text-center ">
     <h2 class="section-title text-[45px] font-bold sans-serif Poppins text-blue-900 mb-8">About Us</h2>
     <div class="max-w-4xl mx-auto text-gray-300 text-lg leading-relaxed font-bold text-lg">
